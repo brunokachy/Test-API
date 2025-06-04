@@ -1,0 +1,16 @@
+meta {
+  name: Data USA
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://datausa.io/api/data?drilldowns=Nation&measures=Population
+  body: none
+  auth: inherit
+}
+
+params:query {
+  drilldowns: Nation
+  measures: Population
+}
